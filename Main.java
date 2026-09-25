@@ -13,5 +13,20 @@ public class Main {
 
         System.out.println(nasi.getNama() + ": " + nasi.isTersedia());
         System.out.println(kopi.getNama() + ": " + kopi.isTersedia());
+
+//        test
+//        System.out.println(kopi.getNama() + ": " + kopi.tersedia);
+
+        Pesanan p1 = new Pesanan(m1, nasi, 2);
+        Pesanan p2 = new Pesanan(m2, kopi, 1);
+
+        Pesanan p3 = new Pesanan(m1, nasi, 1);
+        System.out.println("Nomor P1: " + p1.getNomor());
+        System.out.println("Nomor P2: " + p2.getNomor());
+        System.out.println("Nomor P3: " + p3.getNomor());
+
+        System.out.println("P1 dapat diproses: " + p1.dapatDiproses());
+        System.out.println("Total P1: " + p1.hitungTotal());
+        System.out.println("P2 dapat diproses: " + p2.dapatDiproses());
     }
 }

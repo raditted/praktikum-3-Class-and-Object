@@ -30,4 +30,6 @@ public class MenuItem {
     public void tandaiHabis(){
         this.tersedia = false;
     }
+
+
 }
